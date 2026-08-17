@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- Tipo de documento HTML -->
+<html lang="pt-br"> <!-- Idioma do documento -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport para responsividade -->
+    <title>Lojas Brincos e Companhia</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        background-color: rgba(184, 155, 94, 0.3);
+    }
+    form {
+        width: 550px;
+        padding: 40px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    div {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 7px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        border: 1px solid #b89b5e;
+        border-radius: 5px;
+    }
+    textarea {
+        resize: vertical;
+    }
+    #enviar {
+        width: 100%;
+        padding: 11px;
+        background-color: #b89b5e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <form id="sistema_cadastro" name="Sistema de Cadastro" method="post" action="processaCadastro.php"> <!-- Formulário de cadastro -->
+        <h1>SISTEMA DE CADASTRO PARA NOVOS COLABORADORES</h1>
+        <div>
+            <label for="nome">NOME COMPLETO:</label>
+            <input name="nome1" type="text" id="nome" placeholder="Digite o seu nome completo"></div> <!-- Campo para o nome completo -->
+        <div>
+            <label for="idade">IDADE:</label>
+            <input name="idade2" type="number" id="idade" placeholder="Digite a sua idade"></div> <!-- Campo para a idade -->
+        <div>
+            <label for="profissao">PROFISSÃO:</label>
+            <input name="profissao3" type="text" id="profissao" placeholder="Digite a sua profissão"></div> <!-- Campo para a profissão -->
+        <div>
+            <label for="salario">SALÁRIO PRETENDIDO:</label>
+            <input name="salario4" type="number" id="salario" placeholder="Digite o salário pretendido"></div> <!-- Campo para o salário pretendido -->
+        <div>
+            <label for="experiencia">EXPERIÊNCIA ANTERIOR:</label>
+            <textarea name="experiencia5" id="experiencia" placeholder="Digite a sua experiência anterior" rows="8"></textarea></div> <!-- Campo para a experiência anterior -->
+        <input name="Enviar" type="submit" id="enviar" value="ENVIAR"> <!-- Botão para envio do formulário -->
+    </form>
+</body>
+</html>
